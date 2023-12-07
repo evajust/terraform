@@ -1,0 +1,5 @@
+.jevansresume.tf.swp
+.terraform.lock.hcl
+.terraform/
+variables.tf
+terraform.tfstate*
