@@ -1,17 +1,4 @@
 // Service Role Configuration
-data "aws_iam_policy_document" "codepipeline_base_assume_role" {
-  statement {
-    sid     = ""
-    effect  = "Allow"
-    actions = ["sts:AssumeRole"]
-
-    principals {
-      type        = "Service"
-      identifiers = ["codepipeline.amazonaws.com"]
-    }
-  }
-}
-
 resource "aws_iam_role" "codepipeline_portfolio" {
   name               = "CodePipelineServiceRole-Portfolio"
   path               = "/"
